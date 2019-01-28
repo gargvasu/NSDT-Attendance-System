@@ -1,0 +1,93 @@
+
+<html>
+<head>
+    <title>The Sound Shinobi Attendance Tracker</title>
+
+
+<link href="register.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+    <!-- TYPING DNA RECORDER -->
+<script src="typingdna.js"></script>
+
+
+ <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+
+
+
+<center><h2><b>The Sound Shinobi Attendance Tracker</b></h2></center>
+<br>
+<center><h3>Please ensure you type the way you normally do. <br> 
+    We track your typing pattern for future authentication purposes.<br>
+</h3></center><br>
+<center><h3><b>Type "The quick brown fox jumps <br> over the lazy dog" in the text area or anything > 50 chars</b>
+</h3></center>
+<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+
+                    <h3>Student</h3>
+                    <form>
+                      <div class="form-group">
+                            <input name="s_name"  id="s_name" type="text" class="form-control" placeholder="Your Full Name *" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="s_regno" id="s_regno"type="text" class="form-control" placeholder="Your Registration Number *" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="s_email" id="s_email"type="email" class="form-control" placeholder="Your Email *" value="" required>
+                        </div>
+                      <div class="form-group">
+                             <textarea class="form-control" id="Textarea1" rows="3" placeholder="Text Area*..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-lg" onclick="recordStudent()">Register</button>
+                        </div>
+                       
+                    </form>
+
+                    <p class="lead mt-4" style="color:white;">Have An Account? <a href="/users/login">Login</a></p>
+                </div>
+                <div class="col-md-6 login-form-2">
+                   
+                    <h3>Faculty</h3>
+                    <form>
+                        <div class="form-group">
+                            <input name="f_name" id="f_name" type="text" class="form-control" placeholder="Your Full Name *" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="f_email" id="f_email"type="email" class="form-control" placeholder="Your Email *" value="" required>
+                        </div>
+
+                         <div class="form-group">
+                              <textarea class="form-control" id="Textarea2" rows="3" placeholder="Text Area*..." required></textarea>
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-lg" onclick="recordFaculty()">Register</button>
+                        </div>
+                       
+                    </form>
+
+                     <p class="lead mt-4" style="color:white;">Have An Account? <a href="/users/login">Login</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<script src="record.js"></script>
+
+
+</body>
+</html>
+
